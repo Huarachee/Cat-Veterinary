@@ -150,6 +150,11 @@ $yeseva-one-font: 'Yeseva One', cursive;
     margin: 0 auto;
 }
 
+.main-img{
+    width: 1068px;
+    height: 712px;
+}
+
 // header--end
 
 
@@ -370,7 +375,7 @@ $yeseva-one-font: 'Yeseva One', cursive;
 // why-us--start
 
 .why-us{
-    background-color: $body-color;
+    background-color: #151313;
 }
 
 .why-us__title{
@@ -380,6 +385,61 @@ $yeseva-one-font: 'Yeseva One', cursive;
 .why-us__sub-text{
     text-align: center;
     padding: 23px 0 47px 0;
+}
+
+.why-us__container-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-us__card{
+    width: 360px;
+    height: 300px;
+    background-color: #1F1C1D;
+    margin-bottom: 100px;
+    cursor: pointer;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.card-container{
+    width: 320px;
+    height: 260px;
+    transition: all .4s;
+    margin: 21px auto;
+    text-decoration: none;
+    &:hover{
+        background-color: $gold-color;
+        #card-logo-svg-1,
+        #card-logo-svg-2,
+        #card-logo-svg-3{
+            fill: #fff;
+        }
+    }
+}
+
+.card-logo{
+    padding: 36px 0 45px 0;
+}
+
+.card-logo--2{
+    padding: 37px 0 53px 0;
+}
+
+.card-logo__img{
+    display: block;
+    margin: 0 auto;
+}
+
+.card-text{
+    color: #fff;
+    font-family: $roboto-font;
+    font-weight: 300;
+    font-size: 16px;
+    width: 255px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 // why-us--end
@@ -480,7 +540,6 @@ $yeseva-one-font: 'Yeseva One', cursive;
 // question-answer--start
 
 .question-answer{
-    height: 100vh;
     background-color: $body-color;
 }
 
@@ -490,6 +549,107 @@ $yeseva-one-font: 'Yeseva One', cursive;
 
 .question-answer__sub-text{
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.list__container-box{
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.list__item-box{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $gold-color;
+}
+
+.list__container-box--1{
+    display: flex;
+    &::before{
+        content: "01";
+        color: $gold-color;
+        font-family: $roboto-font;
+        font-weight: bold;
+        font-size: 70px;
+        margin: 15px 20px 0 0;
+    }
+}
+
+.list__container-box--2{
+    display: flex;
+    &::before{
+        content: "02";
+        color: $gold-color;
+        font-family: $roboto-font;
+        font-weight: bold;
+        font-size: 70px;
+        margin: 15px 20px 0 0;
+    }
+}
+
+.list__container-box--3{
+    display: flex;
+    &::before{
+        content: "03";
+        color: $gold-color;
+        font-family: $roboto-font;
+        font-weight: bold;
+        font-size: 70px;
+        margin: 15px 20px 0 0;
+    }
+}
+
+.list__container-box--4{
+    display: flex;
+    &::before{
+        content: "04";
+        color: $gold-color;
+        font-family: $roboto-font;
+        font-weight: bold;
+        font-size: 70px;
+        margin: 15px 20px 0 0;
+    }
+}
+
+.item-box__title{
+    color: #fff;
+    font-size: 16px;
+    font-family: $roboto-font;
+    font-weight: 500;
+}
+
+.item-box__title--1{
+    padding: 48px 544px 48px 30px;
+}
+
+.item-box__title--2{
+    padding: 48px 757px 48px 30px;
+}
+
+.item-box__title--3{
+    padding: 48px 588px 48px 30px;
+}
+
+.item-box__title--4{
+    padding: 48px 624px 48px 30px;
+}
+
+.item-box__more-details{
+    width: 104px;
+    height: 113px;
+    border: 1px solid $gold-color;
+    position: relative;
+    cursor: pointer;
+}
+
+.more-details__img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 // question-answer--end
@@ -564,6 +724,60 @@ $yeseva-one-font: 'Yeseva One', cursive;
 
 // Адаптив--start
 
+@media (max-width: 1296px) {
+    .container{
+        width: 1000px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .main-img{
+        width: 980px;
+        height: 714px;
+    }
+}
 
+@media (max-width: 1234px) {
+    .container{
+        width: 900px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1130px) {
+    .container{
+        width: 800px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .main-img{
+        width: 900px;
+        height: 714px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .container{
+        width: 750px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .main-img{
+        width: 860px;
+        height: 714px;
+    }
+}
+
+@media (max-width: 982px) {
+    .container{
+        width: 750px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .main-img{
+        width: 860px;
+        height: 714px;
+    }
+}
 
 // Адаптив--end
