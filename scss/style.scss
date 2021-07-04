@@ -12,7 +12,7 @@ $yeseva-one-font: 'Yeseva One', cursive;
 }
 
 .container{
-    width: 1230px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -32,6 +32,9 @@ $yeseva-one-font: 'Yeseva One', cursive;
 .header{
     height: 100vh;
     background-color: #181617;
+    background-image: url("../images/header-cat.png");
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
 }
 
 ::-webkit-scrollbar{
@@ -59,7 +62,7 @@ $yeseva-one-font: 'Yeseva One', cursive;
     font-size: 52px;
     font-family: $yeseva-one-font;
     color: #fff;
-    width: 469px;
+    max-width: 469px;
     margin-top: 18px;
 }
 
@@ -301,6 +304,10 @@ $yeseva-one-font: 'Yeseva One', cursive;
     margin: -626px 0 0 323px;
     position: absolute;
     transition: all .4s;
+    background-image: url("../images/breed-features__img-1.png");
+    background-repeat: no-repeat;
+    width: 631px;
+    height: 737px;
     &:hover{
         transform: scale(1.02);
     }
@@ -855,59 +862,1441 @@ $yeseva-one-font: 'Yeseva One', cursive;
 // footer--end
 
 
-// Адаптив--start
+// Adaptive--start
 
 @media (max-width: 1296px) {
+    
+    // section__header--start
+
     .container{
         width: 1000px;
         padding: 0 15px;
         margin: 0 auto;
     }
+
+    // section__header--end
+
+    // section__breed-features--start
+
+    .image-circle__border-circle {
+        margin: -578px 0 0 180px;
+    }
+
+    .image-circle__img-cat {
+        margin: -626px 0 0 201px;
+    }
+
+    .breed-feature__item--instruction {
+        left: 828px;
+    }
+
+    .breed-feature__item--appearance {
+        left: 785px;
+    }
+
+    .breed-feature__item--cohabitation {
+        left: -57px;
+    }
+
+    .breed-feature__item--weight {
+        left: -80px;
+    }
+
+    // section__breed-features--end
 }
 
 @media (max-width: 1234px) {
+    
+    // section__header--start
+
     .container{
         width: 900px;
         padding: 0 15px;
         margin: 0 auto;
     }
+
+    // section__header--end
+
+    .container-images__item{
+        width: 440px;
+    }
+
+    .gallery-cat__container-images{
+        display: grid;
+        grid-template-columns: repeat(2, 411px);
+        grid-template-rows: repeat(2, 170px);
+        grid-gap: 30px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .images__item-img--1,
+    .images__item-img--2{
+        width: 410px;
+    }
+
+    .images__item-img--3{
+        width: 357px;
+        height: 390px;
+    }
+
+    // section__breed-features--start
+
+    .image-circle__border-circle {
+        margin: -578px 0 0 130px;
+    }
+
+    .image-circle__img-cat {
+        margin: -626px 0 0 148px;
+    }
+
+    .breed-feature__item--instruction {
+        left: 778px;
+    }
+
+    .breed-feature__item--appearance {
+        left: 735px;
+    }
+
+    .breed-feature__item--cohabitation {
+        left: -107px;
+    }
+
+    .breed-feature__item--weight {
+        left: -130px;
+    }
+
+    // section__breed-features--end
+}
+
+@media (max-width: 1176px) {
+    
+    // section__breed-features--start
+
+    .breed-feature__item{
+        max-width: 200px;
+    }
+
+    .breed-feature__item--instruction {
+        left: 778px;
+        &::before {
+            right: 214px;
+        }
+    }
+
+    .breed-feature__item--appearance {
+        left: 738px;
+        &::before {
+            right: 218px;
+        }
+    }
+
+    .breed-feature__item--cohabitation {
+        left: -52px;
+    }
+
+    .breed-feature__item--weight {
+        left: -75px;
+    }
+
+    // section__breed-features--end
 }
 
 @media (max-width: 1130px) {
+    
+    // section__header--start
+    
     .container{
         width: 800px;
         padding: 0 15px;
         margin: 0 auto;
     }
+
     .header__images-box{
         margin-right: -128px;
+        overflow: hidden;
     }
+
+    .main-img{
+        overflow: hidden;
+    }
+
+    .header{
+        height: 100vh;
+        background-color: #181617;
+        background-image: url("../images/header-cat.png");
+        background-repeat: no-repeat;
+        background-position: right -125px bottom 0;
+    }
+    
+    // section__header--end
+
+    // section__breed-features--start
+
+    .image-circle__border-circle {
+        margin: -578px 0 0 83px;
+    }
+
+    .image-circle__img-cat {
+        margin: -626px 0 0 107px;
+    }
+
+    .breed-feature__item--instruction {
+        left: 732px;
+    }
+
+    .breed-feature__item--appearance {
+        left: 693px;
+    }
+
+    .breed-feature__item--cohabitation {
+        left: -99px;
+    }
+
+    .breed-feature__item--weight {
+        left: -122px;
+    }
+
+    // section__breed-features--end
+}
+
+@media (max-width: 1075px) {
+    
+    // section__breed-features--start
+
+    .breed-feature__item {
+        max-width: 162px;
+    }
+
+    .breed-feature__item--instruction {
+        left: 732px;
+        &::before{
+            left: -30px;
+        }
+    }
+
+    .breed-feature__item--appearance {
+        left: 693px;
+        &::before{
+            left: -34px;
+        }
+    }
+
+    .breed-feature__item--cohabitation {
+        left: -61px;
+    }
+
+    .breed-feature__item--weight {
+        left: -84px;
+    }
+
+    // section__breed-features--end
 }
 
 @media (max-width: 1030px) {
+    
+    // section__header--start
+
     .container{
         width: 750px;
         padding: 0 15px;
         margin: 0 auto;
     }
-    // .main-img{
-    //     width: 860px;
-    //     height: 714px;
-    // }
+
+    // section__header--end
+
+    // section__gallery-cat--start
+    
+    .container-images__item{
+        width: 440px;
+    }
+
+    .gallery-cat__container-images{
+        display: grid;
+        grid-template-columns: repeat(2, 385px);
+        grid-template-rows: repeat(2, 160px);
+        grid-gap: 30px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .images__item-img--1,
+    .images__item-img--2{
+        width: 385px;
+    }
+
+    .images__item-img--3{
+        width: 330px;
+        height: 367px;
+    }
+
+    // section__gallery-cat--end
+
+    // section__breed-features--start
+
+    .image-circle__border-circle {
+        margin: -578px 0 0 55px;
+    }
+    
+    .image-circle__img-cat {
+        margin: -626px 0 0 75px;
+    }
+
+    .breed-feature__item {
+        max-width: 108px;
+    }
+    
+    .breed-feature__item--instruction {
+        left: 703px;
+    }
+    
+    .breed-feature__item--appearance {
+        left: 664px;
+    }
+    
+    .breed-feature__item--cohabitation {
+        left: -56px;
+        &::before{
+            left: 149px;
+        }
+    }
+    
+    .breed-feature__item--weight {
+        left: -58px;
+    }
+    
+    // section__breed-features--end
 }
 
 @media (max-width: 982px) {
+    
+    // section__header--start
+    
     .container{
-        width: 850px;
-        padding: 0 15px;
+        width: 800px;
         margin: 0 auto;
     }
-    .main-img{
-        width: 860px;
-        height: 714px;
+
+    .contact__line{
+        display: none;
     }
+
+    .contact__social-networks{
+        display: flex;
+    }
+
+    .network{
+        margin-right: 11px;
+    }
+
+    .network--1{
+        margin-top: 2px;
+    }
+
+    .network--2{
+        margin: 1px 6px 0 0;
+    }
+    
+    .header__contact{
+        margin-top: 60px;
+        margin-left: 41px;
+    }
+
+    // section__header--end
+
+    // section__gallery-cat--start
+    
+    .container-images__item{
+        width: 330px;
+    }
+
+    .gallery-cat__container-images{
+        display: grid;
+        grid-template-columns: repeat(2, 354px);
+        grid-template-rows: repeat(2, 147px);
+        max-width: 800px;
+        // margin: 0 auto;
+        margin: 0 0 0 45px;
+    }
+
+    .images__item-img--1,
+    .images__item-img--2{
+        width: 355px;
+    }
+
+    .images__item-img--3{
+        width: 330px;
+        height: 367px;
+    }
+
+    // section__gallery-cat--end
+
+    // section__breed-features--start
+
+    .image-circle__border-circle {
+        margin: -578px 0 0 80px;
+    }
+    
+    .image-circle__img-cat {
+        margin: -626px 0 0 96px;
+    }
+
+    .breed-feature__item {
+        max-width: 108px;
+    }
+    
+    .breed-feature__item--instruction {
+        left: 728px;
+    }
+    
+    .breed-feature__item--appearance {
+        left: 689px;
+    }
+    
+    .breed-feature__item--cohabitation {
+        left: -32px;
+        &::before{
+            left: 149px;
+        }
+    }
+    
+    .breed-feature__item--weight {
+        left: -33px;
+    }
+    
+    // section__breed-features--end
+
+}
+
+@media (max-width: 900px) {
+    
+    // section__gallery-cat--start
+    
+    .gallery-cat__container-images{
+        display: grid;
+        grid-template-columns: repeat(2, 354px);
+        grid-template-rows: repeat(2, 147px);
+        max-width: 715px;
+        margin: 0 auto;
+        // margin: 0 0 0 45px;
+    }
+
+    .images__item-img--3 {
+        width: 310px;
+        height: 342px;
+    }
+
+    // section__gallery-cat--end
+}
+
+@media (max-width: 882px) {
+    // section__breed-features--start
+
+    .image-circle__border-circle {
+        margin: -578px 0 0 33px;
+    }
+        
+    .image-circle__img-cat {
+        margin: -626px 0 0 52px;
+    }
+        
+    .breed-feature__item--instruction {
+        left: 672px;
+        &::before{
+            left: -20px;
+        }
+    }
+        
+    .breed-feature__item--appearance {
+        left: 643px;
+    }
+        
+    .breed-feature__item--cohabitation {
+        left: -72px;
+        &::before{
+            left: 142px;
+        }
+    }
+        
+    .breed-feature__item--weight {
+        left: -65px;
+        &::before{
+            right: -20px;
+        }
+    }
+        
+    // section__breed-features--end
+}
+
+@media (max-width: 880px) {
+    
+    // section__header--start
+
+    .header{
+        background-position: right -200px bottom 0;
+    }
+
+    .container{
+        width: 700px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 874px) {
+    // section__breed-features--start
+
+    .image-circle__border-circle {
+        margin: -578px 0 0 33px;
+    }
+        
+    .image-circle__fill-circle{
+        width: 348px;
+        height: 348px;
+    }
+    
+    .image-circle__border-circle{
+        width: 424px;
+        height: 424px;
+        border-radius: 50%;
+        border: 1px solid $gold-color;
+        position: absolute;
+        margin: -391px 0 0 133px;
+    }
+
+    .image-circle__img-cat {
+        background-image: url("../images/breed-features__img-1--middle.png");
+        width: 410px;
+        height: 610px;
+        background-repeat: no-repeat;
+        margin: -481px 0 0 147px;
+    }
+        
+    .breed-feature__item--instruction {
+        left: 569px;
+        top: -262px;
+    }
+        
+    .breed-feature__item--appearance {
+        left: 541px;
+        top: -187px;
+    }
+        
+    .breed-feature__item--cohabitation {
+        left: 9px;
+        top: -293px;
+    }
+        
+    .breed-feature__item--weight {
+        left: 23px;
+        top: -207px;
+    }
+        
+    // section__breed-features--end
+}
+
+@media (max-width: 800px){
+    
+    // section__header--start
+    
+    .header{
+        background-position: right -260px bottom 0;
+    }
+
+    .container{
+        width: 700px;
+    }
+
+    // section__header--end
+
+}
+
+@media (max-width: 780px) {
+
+    // section__breed-features--start
+
+    .breed-features__sub-text{
+        width: 524px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    // section__breed-features--end
+
+}
+
+@media (max-width: 770px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 690px;
+    }
+
+    // section__header--end
+
+}
+
+@media (max-width: 760px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 680px;
+    }
+
+    .header{
+        background-position: right -270px bottom 0;
+    }
+
+    // section__header--end
+    
+}
+
+@media (max-width: 750px) {
+    
+    // section__header--start
+
+    .container{
+        width: 670px;
+    }
+
+    .header{
+        height: 85vh;
+        background-image: url("../images/header-cat__middle.png");
+        background-position: right -10px bottom 0;
+    }
+
+    .header__contact{
+        margin-top: 20px;
+    }
+
+    // section__header--end
+
+    // section__breed-features--start
+
+    .image-circle__border-circle{
+        width: 424px;
+        height: 424px;
+        margin: -391px 0 0 120px;
+    }
+
+    .image-circle__img-cat {
+        background-image: url("../images/breed-features__img-1--middle.png");
+        width: 410px;
+        height: 610px;
+        background-repeat: no-repeat;
+        margin: -481px 0 0 144px;
+    }
+        
+    .breed-feature__item--instruction {
+        left: 556px;
+        top: -262px;
+    }
+        
+    .breed-feature__item--appearance {
+        left: 529px;
+        top: -187px;
+    }
+        
+    .breed-feature__item--cohabitation {
+        left: -4px;
+        top: -293px;
+    }
+        
+    .breed-feature__item--weight {
+        left: 10px;
+        top: -207px;
+    }
+
+    // section__breed-features--end
+}
+
+@media (max-width: 740px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 660px;
+    }
+
+    // section__header--end
+
+
+}
+
+@media (max-width: 730px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 650px;
+    }
+
+    .header{
+        background-position: right -50px bottom 0;
+    }
+
+    // section__header--end
+
+    // section__breed-features--start
+
+    .image-circle__border-circle{
+        width: 424px;
+        height: 424px;
+        margin: -391px 0 0 111px;
+    }
+    
+    .image-circle__img-cat {
+        background-image: url("../images/breed-features__img-1--middle.png");
+        width: 410px;
+        height: 610px;
+        background-repeat: no-repeat;
+        margin: -481px 0 0 144px;
+    }
+            
+    .breed-feature__item--instruction {
+        left: 547px;
+        top: -262px;
+    }
+            
+    .breed-feature__item--appearance {
+        left: 519px;
+        top: -187px;
+    }
+            
+    .breed-feature__item--cohabitation {
+        left: -12px;
+        top: -293px;
+    }
+            
+    .breed-feature__item--weight {
+        left: 2px;
+        top: -207px;
+    }
+    
+    // section__breed-features--end
+}
+
+@media (max-width: 720px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 640px;
+    }
+
+    .header{
+        background-position: right -80px bottom 0;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 710px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 620px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 701px) {
+
+    // section__breed-features--start
+
+    .image-circle__fill-circle{
+        width: 230px;
+        height: 230px;
+    }
+    
+    .image-circle__border-circle{
+        width: 280px;
+        height: 280px;
+        margin: -256px 0 0 163px;
+    }
+        
+    .image-circle__img-cat {
+        background-image: url("../images/breed-features__img-1--mobile.png");
+        width: 267px;
+        height: 291px;
+        margin: -279px 0 0 170px;
+    }
+                
+    .breed-feature__item--instruction {
+        left: 454px;
+        top: -195px;
+    }
+                
+    .breed-feature__item--appearance {
+        left: 448px;
+        top: -175px;
+    }
+                
+    .breed-feature__item--cohabitation {
+        left: 31px;
+        top: -197px;
+    }
+                
+    .breed-feature__item--weight {
+        left: 58px;
+        top: -148px;
+    }
+        
+    // section__breed-features--end
+}
+
+@media (max-width: 700px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 610px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 668px) {
+    // section__breed-features--start
+    
+    .image-circle__border-circle{
+        margin: -256px 0 0 154px;
+    }
+        
+    .image-circle__img-cat {
+        margin: -279px 0 0 170px;
+    }
+                
+    .breed-feature__item--instruction {
+        left: 445px;
+    }
+                
+    .breed-feature__item--appearance {
+        left: 426px;
+        &::before{
+            left: -22px;
+        }
+    }
+                
+    .breed-feature__item--cohabitation {
+        left: 37px;
+        &::before{
+            left: 127px;
+        }
+    }
+                
+    .breed-feature__item--weight {
+        left: 49px;
+    }
+        
+    // section__breed-features--end
+}
+
+@media (max-width: 680px) {
+    
+    // section__header--start
+
+    .container{
+        width: 600px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 670px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 590px;
+    }
+
+    .header{
+        background-position: right -100px bottom 0;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 660px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 580px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 650px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 570px;
+    }
+
+    .header{
+        background-position: right -120px bottom 0;
+    }
+
+    // section__header--end
+
+    // section__breed-features--start
+    
+    .image-circle__border-circle{
+        margin: -256px 0 0 143px;
+    }
+        
+    .image-circle__img-cat {
+        margin: -279px 0 0 154px;
+    }
+                
+    .breed-feature__item--instruction {
+        left: 434px;
+    }
+                
+    .breed-feature__item--appearance {
+        left: 415px;
+    }
+                
+    .breed-feature__item--cohabitation {
+        left: 27px;
+    }
+                
+    .breed-feature__item--weight {
+        left: 38px;
+    }
+        
+    // section__breed-features--end
+}
+
+@media (max-width: 640px) {
+    
+    // section__header--start
+
+    .container{
+        width: 560px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 630px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 550px;
+    }
+
+    // section__header--end
+
+    // section__breed-features--start
+    
+    .image-circle__border-circle{
+        margin: -256px 0 0 133px;
+    }
+            
+    .image-circle__img-cat {
+        margin: -279px 0 0 141px;
+    }
+                    
+    .breed-feature__item--instruction {
+        left: 424px;
+    }
+                    
+    .breed-feature__item--appearance {
+        left: 405px;
+    }
+                    
+    .breed-feature__item--cohabitation {
+        left: 16px;
+    }
+                    
+    .breed-feature__item--weight {
+        left: 27px;
+    }
+            
+    // section__breed-features--end
+}
+
+@media (max-width: 620px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 540px;
+    }
+
+    .header{
+        background-position: right -140px bottom 0;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 610px) {
+    
+    // section__header--start
+
+    .container{
+        width: 530px;
+    }
+
+    // section__header--end
+
+    // section__breed-features--start
+    
+    .image-circle__border-circle{
+        margin: -256px 0 0 122px;
+    }
+                
+    .image-circle__img-cat {
+        margin: -279px 0 0 133px;
+    }
+                        
+    .breed-feature__item--instruction {
+        left: 413px;
+    }
+                        
+    .breed-feature__item--appearance {
+        left: 394px;
+    }
+                        
+    .breed-feature__item--cohabitation {
+        left: 5px;
+    }
+                        
+    .breed-feature__item--weight {
+        left: 16px;
+    }
+                
+    // section__breed-features--end
+}
+
+@media (max-width: 600px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 520px;
+    }
+
+    .header{
+        background-position: right -224px bottom 0;
+    }
+
+    // section__header--end
+
+    
+}
+
+@media (max-width: 590px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 510px;
+    }
+
+    // section__header--end
+
+    // section__breed-features--start
+    
+    .breed-features__sub-text{
+        width: 377px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .image-circle__border-circle{
+        margin: -256px 0 0 113px;
+    }
+                    
+    .image-circle__img-cat {
+        margin: -279px 0 0 127px;
+    }
+                            
+    .breed-feature__item--instruction {
+        left: 404px;
+    }
+                            
+    .breed-feature__item--appearance {
+        left: 386px;
+    }
+                            
+    .breed-feature__item--cohabitation {
+        left: -3px;
+    }
+                            
+    .breed-feature__item--weight {
+        left: 8px;
+    }
+                    
+    // section__breed-features--end
+}
+
+@media (max-width: 580px) {
+    
+    // section__header--start
+
+    .container{
+        width: 500px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 570px) {
+    
+    // section__header--start
+
+    .container{
+        width: 450px;
+    }
+
+    // section__header--end
+
+    // section__breed-features--start
+        
+    .image-circle__border-circle{
+        margin: -256px 0 0 82px;
+    }
+                        
+    .image-circle__img-cat {
+        margin: -279px 0 0 91px;
+    }
+                                
+    .breed-feature__item--instruction {
+        left: 373px;
+    }
+                                
+    .breed-feature__item--appearance {
+        left: 354px;
+    }
+                                
+    .breed-feature__item--cohabitation {
+        left: -34px;
+    }
+                                
+    .breed-feature__item--weight {
+        left: -24px;
+    }
+                        
+    // section__breed-features--end
+}
+
+@media (max-width: 540px) {
+    
+    // section__header--start
+
+    .container{
+        width: 450px;
+    }
+
+    .header{
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-position: right 0 bottom -130px;
+    }
+
+    .content__city{
+        text-align: center;
+    }
+
+    .content__title{
+        text-align: center;
+    }
+
+    .content__sub-text{
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .content__btn{
+        display: block;
+        margin: 40px auto ;
+    }
+
+    .contact__social-networks{
+        display: none;
+    }
+
+    // section__header--end
+
+    // section__breed-features--start
+        
+    .image-circle__border-circle{
+        margin: -256px 0 0 82px;
+    }
+                            
+    .image-circle__img-cat {
+        margin: -279px 0 0 91px;
+    }
+                                    
+    .breed-feature__item--instruction {
+        left: 373px;
+    }
+                                    
+    .breed-feature__item--appearance {
+        left: 354px;
+    }
+                                    
+    .breed-feature__item--cohabitation {
+        left: -34px;
+    }
+                                    
+    .breed-feature__item--weight {
+        left: -24px;
+    }
+                            
+    // section__breed-features--end
+}
+
+@media (max-width: 530px) {
+    
+    // section__header--start
+    
+    .container{
+        width: 440px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 520px) {
+    
+    // section__header--start
+
+    .container{
+        width: 436px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 517px) {
+    
+    // section__header--start
+
+    .container{
+        width: 469px;
+        padding: 0;
+    }
+
+    .header{
+        background-position: right 0 bottom -130px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 480px) {
+    
+    // section__header--start
+
+    .container{
+        width: 390px;
+    }
+
+    .content__title {
+        width: 400px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 420px) {
+    
+    // section__header--start
+    
+    .content__title {
+        width: 386px;
+    }
+
+    // section__header--end
 }
 
 
+@media (max-width: 401px) {
+    
+    // section__header--start
 
-// Адаптив--end
+    .content__title {
+        width: 358px;
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .header{
+        height: 100vh;
+        background-image: url("../images/header-cat__mobail.png");
+        background-position: right 0 bottom 0;
+    }
+
+    .content__city{
+        font-size: 14px;
+    }
+
+    .content__sub-text{
+        font-size: 14px;
+    }
+
+    .content__btn{
+        width: 141px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .header__logo,
+    .header__content{
+        max-width: 384px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 390px) {
+    
+    // section__header--start
+    
+    .header__logo,
+    .header__content{
+        max-width: 380px;
+    }
+
+    .container__sub-content{
+        display: none;
+    }
+
+    .content__title{
+        width: 350px;
+    }
+
+    .header__logo,
+    .header__content,
+    .header-container,
+    .container{
+        max-width: 372px;
+    }
+
+    // section__header--end
+
+}
+
+@media (max-width: 376px) {
+    
+    // section__header--start
+
+    .content__title{
+        width: 323px;
+    }
+    .header__logo,
+    .header__content,
+    .header-container,
+    .container{
+        max-width: 349px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 350px) {
+    
+    // section__header--start
+    
+    .header__logo,
+    .header__content,
+    .header-container,
+    .container{
+        max-width: 320px;
+    }
+
+    .content__title{
+        max-width: 309px;
+    }
+    
+    .content__sub-text{
+        max-width: 300px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 338px) {
+    
+    // section__header--start
+
+    .content__title{
+        max-width: 300px;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 321px) {
+    
+    // section__header--start
+    
+    .header__logo,
+    .header__content,
+    .header-container,
+    .container{
+        max-width: 314px;
+    }
+    
+    .header__logo{
+        padding: 25px 0 40px 0;
+    }
+    .content__title{
+        padding: 5px 8px;
+    }
+
+    .content__sub-text{
+        margin: 15px auto;
+    }
+
+    .content__btn{
+        margin: 20px auto;
+    }
+
+    // section__header--end
+}
+
+@media (max-width: 317px) {
+    
+    // section__header--start
+    
+    .header__logo,
+    .header__content,
+    .header-container,
+    .container{
+        max-width: 278px;
+    }
+    
+    .header{
+        background-position: right -40px bottom 0;
+    }
+
+    .header__logo{
+        padding: 25px 0 40px 0;
+    }
+    .content__title{
+        padding: 5px 8px;
+        max-width: 260px;
+    }
+
+    .content__sub-text{
+        margin: 15px auto;
+        max-width: 266px;
+    }
+
+    // section__header--end
+}
+// Adaptive--end
